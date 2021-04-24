@@ -1,0 +1,2224 @@
+<!DOCTYPE html>
+<!--头部js-->
+<!--头部css-->
+<!--首页头部图片-->
+
+<!--头部登陆信息-->
+<!--首页头部搜索框 购物车 订单 邀请好友-->
+<html xmlns:wb="http://open.weibo.com/wb">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+		<title>乐友孕婴童网上商城—时尚妈妈值得信赖的母婴用品一站式购物中心</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<meta content="乐友(www.leyou.com.cn—婴幼儿母婴用品网上商城) 是中国孕婴童行业领先的全国连锁母婴用品零售企业，销售的商品包括婴幼儿奶粉、营养用品、食品、辅食、纸尿裤、喂养用品、洗护安全电器、玩具、图书音像及文体、宝宝车床椅、母婴童内衣、母婴童外出服、母婴童附属品、孕妇装、童袜、童鞋、童帽围巾手套、寝具十六大类母婴用品，三万余种婴幼儿单品；与之合作的供应商超过530多家，遍布全球21个国家。竭诚为您提供优质品牌,高品质的专业、安全服务！" name="description" />
+		<meta content="婴幼儿用品,奶粉,儿童服装,母婴用品,宝宝用品,营养品,礼品,超值价格,户外,童车,童床,婴幼服装,大型玩具,儿童玩具,婴儿玩具,婴幼儿图书,音像,卡通,动画,文化用品,水上用品，孕妇呵护,孕期护理,胎教,健康,成长,父母中心,育儿文章、咨询、书籍,父母必读,启蒙教育,儿童中心,亲子互动" name="keywords" />
+		 
+	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="/css/common/reset.css" rel="stylesheet" type="text/css">
+	<link href="/css/common/my_header.css" rel="stylesheet" type="text/css">
+		 
+	<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/common/jquery.min.js"></script><!--产品切换图-->
+	<script type="text/javascript" src="/js/common/handler.js"></script>
+	<script type="text/javascript" src="/js/common/event.js"></script>
+	<script type="text/javascript" src="/js/common/Util.js"></script>
+	<script type="text/javascript" src="/js/common/Request.js"></script>
+	<!--[if IE 6]>
+	<script type="text/javascript" src="/js/common/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript" src="/js/common/ie6Fixpng.js"></script>
+	<![endif]-->
+	</head>
+	
+	<body>
+        <!--头部-->
+		 
+		<!--首页头部-->
+	<!-- <div class="topbar_wrap" id="head_index" > -->
+	<div class="topbar_wrap" id="" >
+		<div class="top_bor conWith clearfix" >
+			<ul class="ul_left">
+				<li>您好，欢迎来到乐友孕婴童网上商城！</li>
+				<li class="saoma">
+					<a class="pad_app">手机商城</a>
+					<div class="saoma_down"><a href=""><img src="/image/common/header/leyou_APP.png" alt="" /></a></div>
+					<input type="hidden" id='damonuserid' value=''>
+				</li>
+				<li class="head_name"><span id="dinginfo"></span></li>
+			</ul>
+			<ul class="ul_right" id="ul_msg">
+				<li><a href="http://my.leyou.com.cn/myOrders/my-orders">我的订单</a></li>
+				<li><a href="http://www.leyou.com.cn/product/promotion_2012.php?special_id=627">乐友礼金卡</a></li>
+				<li class="select_top" data-role="head_selcet">
+					<span><a href="http://www.leyou.com.cn/user/Directory.php">索取目录</a><i class="arrow"></i></span>
+					<div class="pull_list" data-role="select_down">
+						<a href="http://www.leyou.com.cn/help/help_faq" target="_blank">常见问题</a>
+						<a href="http://www.leyou.com.cn/help/help_quality" target="_blank">售后服务</a>
+						<a href="http://www.leyou.com.cn/user/leyou/Complaint.php" target="_blank">投诉/建议</a>
+					</div>
+				</li>
+				<li><a href="http://www.leyou.com.cn/help/help_faq">客户服务</a></li>
+				<li><a href="http://www.leyou.com.cn/special/promotion/2014/11/VIP.php">VIP尊享</a></li>
+				<li><a href="#">客服热线：400-666 9888</a></li>
+				<li class="sc_icon"><a href="javascript:viod(0)" onclick='AddFavorite(window.location,document.title)'>收藏乐友</a></li>
+				<li style="padding-top: 4px;"><wb:follow-button uid="1782515283" type="red_1" width="63" height="24" ></wb:follow-button></li>
+			</ul>
+		</div>
+	</div>
+        <span id="fix_span"></span>
+         <!--header_wrap-->
+			<div class="header_wrap conWith clearfix" id="test_app">
+		<h3 class="logo"><a title="乐友孕婴童—专业的母婴用品零售服务商" href="http://www.leyou.com.cn"></a></h3>
+		<div class="head_search">
+			<form action="" class="clearfix">
+				<span class="search_txt"><input type="text" style='color:rgb(153, 153, 153)' value='' id="keyWord"  onkeyup='onEnter(event)' /></span>
+				<span class="search_btn"><input type="button" value="搜索" onclick='vsp()'/></span>
+			</form>
+			<div class="top_search clearfix">
+				<strong>热门搜索：</strong>
+				<a href="http://s.leyou.com.cn/search?keyWord=歌瑞凯儿童装">歌瑞凯儿童装</a>
+				<a href="http://s.leyou.com.cn/search?keyWord=花王">花王</a>
+				<a href="http://s.leyou.com.cn/search?keyWord=雅培">雅培</a>
+				<a href="http://s.leyou.com.cn/search?keyWord=美素">美素</a>
+				<a href="http://s.leyou.com.cn/search?keyWord=诺优能">诺优能</a>
+				<a href="http://s.leyou.com.cn/search?keyWord=米粉">米粉</a>
+				<a href="http://s.leyou.com.cn/search?keyWord=湿巾">湿巾</a>
+				<a href="http://s.leyou.com.cn/search?keyWord=奶瓶">奶瓶</a>
+				<a href="http://s.leyou.com.cn/search?keyWord=安全座椅">安全座椅</a>
+			</div>
+		</div>
+		<div class="header_treasure">
+			<ul class="ul_list clearfix">
+
+				<li class="my_frend" data-role="head_selcet">
+					<div class="leyou_div" style='position: relative;'>
+						<s id='message-tips' style='display: none;'>
+							<span id="invite_coupon">领券</span>
+						</s>
+						<i></i>
+						<a href="javascript:void(0)">邀请朋友获奖励<strong><em>￥</em>15</strong></a>
+						<b></b>
+					</div>
+					<div class="damon_frend">
+						<div class="header_down_box" style="display: none;" data-role="select_down">
+							<span class="span_sanj">◆</span>
+							<div class="fifty_box">
+								<a href="http://my.leyou.com.cn/invite_friend/invite-friend"><img src="/image/common/header/yaoqing_tit_tip.png"/></a>
+								<p class="frend_text"><input class="inut_text" id="hemail" type="text" onblur="if (value=='') {value='输入朋友的邮箱地址…'}" onfocus="if(value=='输入朋友的邮箱地址…') {value=''}" value="输入朋友的邮箱地址…" name="">
+									<input class="input_btn" type="button" value="邀请"/>
+								</p>
+								<p id='tips-error-send-message' style='width: 226px;height:25px;float: left;line-height: 25px;padding-left: 10px;display: none'></p>
+								<p class="p_text">or<a href="http://my.leyou.com.cn/invite_friend/invite-friend">邀请更多的朋友>></a></p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="my_rmb" data-role="head_selcet">
+					<div class="leyou_div">
+						<i></i>
+						<a href="http://shopping.leyou.com.cn/purchase/cart">去结算</a>
+						<s><span id="my_cart_count" style="display: none;"></span></s>
+						<b></b>
+					</div>
+					<div class="header_down_box damon_rmb" style="display: none;" data-role="select_down">
+						<div class="has_content">
+							<h3 class="clearfix">
+								<span class="fl" >
+								   <strong style='font-size: 12px;'>最新加入的宝贝</strong>
+								</span>
+								<span class="fr" style='float:right'>
+								   <a href="">拖动滚动条浏览所有商品 </a>
+								</span>
+							</h3>
+							<div class="rmb_list">
+								<dl class="clearfix">
+									<dt style="border:none;display:block;background:url(/image/product/loading.gif) center center no-repeat;width: 100%;">
+									</dt>
+									<!-- <dd class="clearfix">
+										<p><a href="">歌瑞凯儿Great Kid(网)--女童针织圆领花边短袖T桖（夏）GK15W-024紫色80件</a></p>
+										<div class="rmb_num">
+													<span class="p-price">
+														<strong>￥25.00</strong>
+														×2
+													</span>
+											<a class="delete_text" href="">删除</a>
+										</div>
+									</dd> -->
+								</dl>
+							</div>
+							<div class="rmb_btn">
+								共
+								<ins>0</ins>
+								种商品
+								<ins>0</ins>
+								件，商品金额总计:
+								<strong><em>￥</em>0</strong>
+								<a class="btn_payforgoods" href='http://shopping.leyou.com.cn/purchase/cart' title="去购物车结算">去结算</a>
+							</div>
+						</div>
+						<!-- <div class="null_content" style='display: :none'>购物车中还没有商品，赶紧选购吧！</div>  -->
+					</div>
+				</li>
+				<li class="my_leyou" data-role="head_selcet">
+					<div id="" class="leyou_div">
+						<i></i>
+						<a href="http://my.leyou.com.cn/myOrders/my-orders">我的乐友</a>
+						<s><span id="my_order_count" style='display:none'></span></s>
+						<b></b>
+					</div>
+					<div class="header_down_box damon_myleyou" data-role="select_down" style="display: none;">
+						<h3 class="clearfix">
+									<span class="fl">
+									   <strong id="nick_order" style='margin-left:5px;font-size: 12px;'></strong>
+									</span>
+									<span class="fr">
+									   <a href="http://my.leyou.com.cn/myOrders/my-orders" style='float: right;margin-top: 5px;margin-right: 5px;'>去我的乐友 ></a>
+									</span>
+						</h3>
+						<div class="uclist clearfix">
+							<ul class="fore1 l">
+								<li>
+									<a href="http://my.leyou.com.cn/myOrders/my-orders" target="_blank">待处理订单<span><font>(0)</font></span></a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">我的消息<span><font>(0)</font></span></a>
+								</li>
+								<li>
+									<a href="http://my.leyou.com.cn/myleyou/attention" target="_blank">降价商品<span><font>(0)</font></span></a>
+								</li>
+								<li>
+									<a href="http://my.leyou.com.cn/myCoupons/activation" target="_blank">优惠券<span><font>(0)</font></span></a>
+								</li>
+							</ul>
+							<ul class="fore2 l">
+								<li>
+									<a href="http://my.leyou.com.cn/myOrders/my-orders" target="_blank">我的订单 ></a>
+								</li>
+								<li>
+									<a href="http://my.leyou.com.cn/myPoint/my-integral" target="_blank">我的积分 ></a>
+								</li>
+								<li>
+									<a href="http://my.leyou.com.cn/myCoupons/activation" target="_blank">购物礼券 ></a>
+								</li>
+								<li>
+									<a href="http://my.leyou.com.cn/myleyou/attention" target="_blank">我的关注 ></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+		    	<!--nav-->
+		<!--nav-->
+	<div class="nav_head">
+		<div class="navgater conWith clearfix">
+			<div class="nav_left" data-role="nav_selcet">   <!--/*data-role="head_selcet*/-->
+				<h3 class="title" >全部商品分类</h3>
+				<div class="nav_list" style='display: none' id="box_select" style="		width: 212px; display: none;
+		" data-role="nav_down">
+					<div class="list">
+						<div class="nav_list_left" id="nav_left">
+							<div class="ul_list">
+								<ul>
+									<li data-role="li_list" class="current">
+										<h3 class="mm">
+											<i></i>
+											<em></em>
+											孕妇及妈妈用品
+										</h3>
+										<p>
+											<a title="防辐射" href="http://s.leyou.com.cn/product/category?cid=1800" target="_blank">防辐射</a>
+											<a title="孕产期奶粉" href="http://s.leyou.com.cn/product/category?cid=1804" target="_blank">孕产期奶粉</a>
+											<a title="吸奶器" href="http://s.leyou.com.cn/product/category?cid=140800" target="_blank">吸奶器</a>
+											<a title="孕内衣" href="http://s.leyou.com.cn/product/category?cid=1802" target="_blank">孕内衣</a>
+											<a title="孕期护肤" href="http://s.leyou.com.cn/product/category?cid=1803" target="_blank">孕期护肤</a>
+											<a title="孕妇装 " href="http://s.leyou.com.cn/product/category?cid=1801" target="_blank">孕妇装 </a>
+											<a title="产垫/待产包" href="http://s.leyou.com.cn/product/category?cid=1811" target="_blank">产垫/待产包</a>
+											<a title="产后塑身去纹" href="http://s.leyou.com.cn/product/category?cid=1807" target="_blank">产后塑身去纹</a>
+										</p>
+									</li>
+									<li data-role="li_list" class="">
+										<h3 class="baby_eat">
+											<i></i>
+											<em></em>
+											宝宝营养品
+										</h3>
+										<p>
+											<a title="奶粉" href="http://s.leyou.com.cn/product/category?cid=20" target="_blank">奶粉</a>
+											<a title="羊奶粉" href="http://s.leyou.com.cn/product/category?cid=2005" target="_blank">羊奶粉</a>
+											<a title="米粉" href="http://s.leyou.com.cn/product/category?cid=1903" target="_blank">米粉</a>
+											<a title="营养面" href="http://s.leyou.com.cn/product/category?cid=1904" target="_blank">营养面</a>
+											<a title="肉松" href="http://s.leyou.com.cn/product/category?cid=1905" target="_blank">肉松</a>
+											<a title="DHA " href="http://s.leyou.com.cn/product/category?cid=2400" target="_blank">DHA </a>
+											<a title="补钙/铁/锌硒 " href="http://s.leyou.com.cn/product/category?cid=2401" target="_blank">补钙/铁/锌硒 </a>
+											<a title="益生菌" href="http://s.leyou.com.cn/product/category?cid=2405" target="_blank">益生菌</a>
+											<a title="鱼肝油" href="http://s.leyou.com.cn/product/category?cid=240203" target="_blank">鱼肝油</a>
+											<a title="清火/开胃" href="http://s.leyou.com.cn/product/category?cid=2404" target="_blank">清火/开胃</a>
+										</p>
+									</li>
+									<li data-role="li_list" class="">
+										<h3 class="baby_wear">
+											<i></i>
+											<em></em>
+											宝宝穿靓装
+										</h3>
+										<p>
+											<a title="内衣" href="http://s.leyou.com.cn/product/category?cid=1700" target="_blank">内衣</a>
+											<a title="内衣礼盒" href="http://s.leyou.com.cn/product/category?cid=170008" target="_blank">内衣礼盒</a>
+											<a title="马甲背心" href="http://s.leyou.com.cn/product/category?cid=170105" target="_blank">马甲背心</a>
+											<a title="上衣" href="http://s.leyou.com.cn/product/category?cid=170101" target="_blank">上衣</a>
+											<a title="开/闭裆裤" href="http://s.leyou.com.cn/product/category?cid=170006" target="_blank">开/闭裆裤</a>
+											<a title="套装" href="http://s.leyou.com.cn/product/category?cid=170007" target="_blank">套装</a>
+											<a title="外出服" href="http://s.leyou.com.cn/product/category?cid=1701" target="_blank">外出服</a>
+											<a title="羽绒服" href="http://s.leyou.com.cn/product/category?cid=170111" target="_blank">羽绒服</a>
+											<a title="童帽" href="http://s.leyou.com.cn/product/category?cid=170411" target="_blank">童帽</a>
+											<a title="童鞋" href="http://s.leyou.com.cn/product/category?cid=1702" target="_blank">童鞋</a>
+											<a title="袜子" href="http://s.leyou.com.cn/product/category?cid=1703" target="_blank">袜子</a>
+										</p>
+									</li>
+									<li data-role="li_list" class="">
+										<h3 class="baby_use">
+											<i></i>
+											<em></em>
+											宝宝用什么
+										</h3>
+										<p>
+											<a title="奶瓶" href="http://s.leyou.com.cn/product/category?cid=1400" target="_blank">奶瓶</a>
+											<a title="尿裤" href="http://s.leyou.com.cn/product/category?cid=11" target="_blank">尿裤</a>
+											<a title="湿巾" href="http://s.leyou.com.cn/product/category?cid=1200" target="_blank">湿巾</a>
+											<a title="洗澡用具" href="http://s.leyou.com.cn/product/category?cid=1302" target="_blank">洗澡用具</a>
+											<a title="身体清洁" href="http://s.leyou.com.cn/product/category?cid=1204" target="_blank">身体清洁</a>
+											<a title="理发器" href="http://s.leyou.com.cn/product/category?cid=131200" target="_blank">理发器</a>
+											<a title="棉签" href="http://s.leyou.com.cn/product/category?cid=1309" target="_blank">棉签</a>
+											<a title="被褥" href="http://s.leyou.com.cn/product/category?cid=1602" target="_blank">被褥</a>
+											<a title="车床椅" href="http://s.leyou.com.cn/product/category?cid=15" target="_blank">车床椅</a>
+											<a title="睡袋" href="http://s.leyou.com.cn/product/category?cid=1601" target="_blank">睡袋</a>
+											<a title="睡枕" href="http://s.leyou.com.cn/product/category?cid=1600" target="_blank">睡枕</a>
+											<a title="洗衣" href="http://s.leyou.com.cn/product/category?cid=1300" target="_blank">洗衣</a>
+											<a title="防晒" href="http://s.leyou.com.cn/product/category?cid=1202" target="_blank">防晒</a>
+										</p>
+									</li>
+									<li data-role="li_list" class="">
+										<h3 class="study_play">
+											<i></i>
+											<em></em>
+											宝宝学与玩
+										</h3>
+										<p>
+											<a title="男孩玩具" href="http://s.leyou.com.cn/product/category?cid=2200" target="_blank">男孩玩具</a>
+											<a title="女孩玩具" href="http://s.leyou.com.cn/product/category?cid=2201" target="_blank">女孩玩具</a>
+											<a title="牙胶摇铃" href="http://s.leyou.com.cn/product/category?cid=2202" target="_blank">牙胶摇铃</a>
+											<a title="乐音玩具" href="http://s.leyou.com.cn/product/category?cid=2209" target="_blank">乐音玩具</a>
+											<a title="智力开发" href="http://s.leyou.com.cn/product/category?cid=2210" target="_blank">智力开发</a>
+											<a title="米卡早慧" href="http://www.leyou.com.cn/special/portal/" target="_blank">米卡早慧</a>
+											<a title="游戏垫" href="http://s.leyou.com.cn/product/category?cid=2205" target="_blank">游戏垫</a>
+											<a title="图书" href="http://s.leyou.com.cn/product/category?cid=210" target="_blank">图书</a>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="nav_list_content" id="list_box" style="display: none;">
+							<div class="padd_content nav_subcat_0 clearfix" style="display: none; width: 481px;">
+								<ul style='z-index: 9999'>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="" title="妈妈营养">妈妈营养</a>
+										</h3>
+										<p class="subItem-cat clearfix">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1804" title="孕产期奶粉">孕产期奶粉</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1805" title="孕产期营养">孕产期营养</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand clearfix">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=638" title="惠氏">惠氏</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=649" title="美赞臣">美赞臣</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=899" title="雀巢">雀巢</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=D05" title="伊利">伊利</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=645" title="雅培">雅培</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=578" title="多美滋">多美滋</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=E53" title="康维多">康维多</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=431" title="合生元">合生元</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=F79" title="纽曼思">纽曼思</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=405" title="美素">美素</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=P39" title="汉臣氏">汉臣氏</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=P39" title="维他纤维">维他纤维</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=Q15" title="优珍">优珍</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=
+X80" title="沱沱工社孕期/月子餐宅配卡">沱沱工社孕期/月子餐宅配卡</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=635" title="贝因美">贝因美</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=V52" title="纽奇">纽奇</a>
+										</p>
+									</li>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="" title="服装服饰">服装服饰</a>
+										</h3>
+										<p class="subItem-cat clearfix">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1800" title="防辐射">防辐射</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=C95" title="孕妇装">孕妇装</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1802" title="孕内衣">孕内衣</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1806" title="产后塑身内衣">产后塑身内衣</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1809" title="哺乳服装">哺乳服装</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand clearfix">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=V47" title="大卫">大卫</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=K02" title="dacco">dacco</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=C95" title="歌瑞妈妈">歌瑞妈妈</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=S06" title="贝莉安雅">贝莉安雅</a>
+										</p>
+									</li>
+								</ul>
+								<ul>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1803" title="妈妈护肤">妈妈护肤</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=120700	" title="头部护理">头部护理</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=120701" title="面部护理">面部护理</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=120702" title="手部护理">手部护理</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=120703" title="身体护理">身体护理</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=120704" title="口腔健康">口腔健康</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1807" title="产后塑身去纹">产后塑身去纹</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=860" title="十月天使">十月天使</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=603" title="贝亲">贝亲</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=R68" title="Denti莎卡">Denti莎卡</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=S22" title="菲丽洁">菲丽洁</a>
+										</p>
+									</li>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1808" title="妈妈哺乳用品">哺乳用品</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=140800" title="吸奶器">吸奶器</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=C92" title="防溢乳垫">防溢乳垫</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=180801" title="乳头保护罩">乳头保护罩</a>
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/V7400008AX" title="哺乳枕">哺乳枕</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1406" title="母乳存储">母乳存储</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=E55" title="美德乐">美德乐</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=D93" title="好女人">好女人</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=W46" title="阿美达">阿美达</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=500" title="新安怡">新安怡</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=D91" title="小白熊">小白熊</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=H35" title="乐儿宝">乐儿宝</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=H56" title="日康">日康</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=N58" title="MAM">MAM</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=X24" title="安朵">安朵</a>
+										</p>
+									</li>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=18" title="妈妈用品">妈妈用品</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1811" title="产垫/待产包">产垫/待产包</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1810" title="卫生巾">卫生巾</a>
+											<a target="_blank" href="" title="孕妇靠枕">孕妇靠枕</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1813" title="背带">背带</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=J36" title="开丽">开丽</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=K02" title="dacco">dacco</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=V47" title="大卫">大卫</a>
+											<a target="_blank" href="" title="悦侣缩阴球">悦侣缩阴球</a>
+											<a target="_blank" href="" title="贝亲">贝亲</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=R22" title="惟爱贝">惟爱贝</a>
+											<a class="red" target="_blank" href="" title="Candide">Candide</a>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<!--2-->
+							<div class="padd_content nav_subcat_1 clearfix" style="display: none; width: 481px;">
+								<ul>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="" title="奶粉">奶粉</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2000" title="1段奶粉">1段奶粉</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2001" title="2段奶粉">2段奶粉</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2002" title="3段奶粉">3段奶粉</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2003" title="4段奶粉">4段奶粉</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2004" title="特殊配方奶粉">特殊配方奶粉</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2005" title="羊奶粉">羊奶粉</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=U93" title="纽澈">纽澈</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=J00" title="惠氏启赋">惠氏启赋</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=635" title="贝因美">贝因美</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=S86" title="爱他美">爱他美</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=638" title="惠氏">惠氏</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=D05" title="伊利">伊利</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=S87" title="白金诺优能">白金诺优能</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=V55" title="诺优能">诺优能</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=405" title="美素">美素</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=899" title="雀巢">雀巢</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=645" title="雅培">雅培</a>
+											<a target="_blank" hhref="" title="嘉宝奶粉">嘉宝奶粉</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=S30" title="雅培菁智">雅培菁智</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=578" title="多美滋">多美滋</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=E53" title="康维多">康维多</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=649" title="美赞臣">美赞臣</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=431" title="合生元">合生元</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=S04" title="瑞乐恩">瑞乐恩</a>
+										</p>
+									</li>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=19" title="辅食">辅食</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1900" title="果汁/水">果汁/水</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1903" title="米粉/菜粉">米粉/菜粉</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1904" title="营养面">营养面</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1905" title="肉松">肉松</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1906" title="长牙期食品">长牙期食品</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1901" title="泥糊类 ">泥糊类 </a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1902" title="冲调类">冲调类</a>
+											<a target="_blank" href="" title="时令水果">时令水果</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=636" title="嘉宝">嘉宝</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=484" title="英氏">英氏</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=S13" title="DAIRY STATE FOODS">DAIRY STATE FOODS</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=D40" title="方广">方广</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=650" title="亨氏">亨氏</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=V51" title="乐健儿">乐健儿</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=427" title="汇源">汇源</a>
+											<a target="_blank" href="" title="禧贝">禧贝</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=S97" title="尚可诗">尚可诗</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=V99" title="kiwigarden">kiwigarden</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=T35" title="清净园鱼肠">清净园鱼肠</a>
+											<a target="_blank" href="" title="宝宝福德">宝宝福德</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=R86" title="皇室乐儿宝">皇室乐儿宝</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=S18" title="健力-鸡子黄">健力-鸡子黄</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=S16" title="Baby’s world">Baby’s world</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=T02" title="贝唯他">贝唯他</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=T13" title="贝比玛玛">贝比玛玛</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=V61" title="乐健儿（进口）">乐健儿（进口）</a>
+											<a class="red" target="_blank" href="" title="威尔顿">威尔顿</a>
+											<a target="_blank" href="" title="伯果儿">伯果儿</a>
+										</p>
+									</li>
+								</ul>
+								<ul>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=24" title="营养品">营养品</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2400" title="DHA ">DHA </a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2401" title="补钙/铁/锌硒 ">补钙/铁/锌硒 </a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2405" title="益生菌">益生菌</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2404" title="清火/开胃">清火/开胃</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2402" title="维生素">维生素</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2403" title="初乳">初乳</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2407" title="绿色食用油 ">绿色食用油 </a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=240203" title="鱼肝油">鱼肝油</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=484" title="英氏">英氏</a>
+											<a target="_blank" href="" title="纽曼思">纽曼思</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=W14" title="童年时光">童年时光</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=E54" title="益力健">益力健</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=T42" title="聪明的油">聪明的油</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=V79" title="恩济堂">恩济堂</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=P39" title="维他纤维">维他纤维</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=P86" title="康邦美味">康邦美味</a>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<!--3-->
+							<div class="padd_content nav_subcat_2 clearfix" style="display: none; width: 481px;">
+								<ul>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a title="婴装" href="http://s.leyou.com.cn/product/category?cid=1700" target="_blank">婴装</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170004" title="上衣">上衣</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170005" title="背心">背心</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170006" title="开/闭裆裤">开/闭裆裤</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170000" title="哈衣">哈衣</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170007" title="套装">套装</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170008" title="内衣礼盒">内衣礼盒</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=S40" title="歌瑞贝儿">歌瑞贝儿</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=C99" title="费雪">费雪</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=P05" title="歌瑞贝儿">歌瑞贝儿</a>
+										</p>
+									</li>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1701" title="童装">童装</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170100" title="连体服">连体服</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170101" title="上衣">上衣</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170102" title="裤子">裤子</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170103" title="裙子">裙子</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170104" title="毛衫 ">毛衫 </a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170105" title="马甲">马甲</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170106" title="套装">套装</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170110" title="T恤/衬衫 ">T恤/衬衫 </a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170111" title="羽绒服">羽绒服</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=P96" title="歌瑞凯儿">歌瑞凯儿</a>
+										</p>
+									</li>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1703" title="童袜">童袜</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170300" title="婴儿袜">婴儿袜</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170301" title="防滑袜">防滑袜</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170302" title="筒袜">筒袜</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170303" title="短袜">短袜</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170304" title="地板袜">地板袜</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=P05" title="歌瑞贝儿">歌瑞贝儿</a>
+										</p>
+									</li>
+								</ul>
+								<ul>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1702" title="童鞋">童鞋</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170204" title="学步鞋">学步鞋</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170203" title="功能鞋">功能鞋</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170205" title="休闲鞋">休闲鞋</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170207" title="布鞋">布鞋</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170208" title="皮鞋">皮鞋</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170209" title="拖鞋">拖鞋</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170210" title="靴">靴</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=P05" title="歌瑞贝儿">歌瑞贝儿</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=P96" title="歌瑞凯儿">歌瑞凯儿</a>
+											<a class="red" target="_blank" href="http://www.leyou.com.cn/special/budiu/budiu.php" title="步丢鞋">步丢鞋</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=M22" title="惠步舒">惠步舒</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=R87" title="基诺浦">基诺浦</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=U26" title="小猪快跑">小猪快跑</a>
+										</p>
+									</li>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1704" title="配饰">配饰</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170403" title="口罩">口罩</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170404" title="围嘴">围嘴</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170406" title="护腕/膝/脐 ">护腕/膝/脐</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170200" title="护手套">护手套</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170201" title="护脚套">护脚套</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1704" title="童帽/围巾/手套">童帽/围巾/手套</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=170412" title="遮阳镜">遮阳镜</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=C97" title="歌瑞凯儿">歌瑞凯儿</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=P05" title="歌瑞贝儿">歌瑞贝儿</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=V77" title="澳大利亚Banz">澳大利亚Banz</a>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<!--4宝宝用什么-->
+							<div class="padd_content nav_subcat_3 clearfix" style="display: none; width: 720px;">
+								<ul>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=14" title="喂养用品">喂养用品</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1400" title="奶瓶">奶瓶</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1401" title="奶嘴">奶嘴</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1402" title="牙胶">牙胶</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1403" title="餐具">餐具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1404" title="喂哺清洁">喂哺清洁</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1405" title="加热消毒">加热消毒</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1406" title="外出/存储用具">外出/存储用具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1407" title="水杯/壶 ">水杯/壶</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=C91" title="韦特儿VitalBaby">韦特儿VitalBaby</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=P81" title="凯瑞丝">凯瑞丝</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=T48" title="荷兰迪福Difrax">荷兰迪福Difrax</a>
+											<a class="red" target="_blank" href="" title="贝儿欣">贝儿欣</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=N58" title="MAM">MAM</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=603" title="贝亲">贝亲</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=U82" title="托马斯">托马斯</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=V29" title="膳魔师">膳魔师</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=483" title="HelloKitty">HelloKitty</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=R11" title="幼蓓">幼蓓</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=T05" title="努比">努比</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=T28" title="满趣健">满趣健</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=U82" title="托马斯">托马斯</a>
+											<a target="_blank" href="" title="希希乐乐">希希乐乐</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=500" title="新安怡">新安怡</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=613" title="NUK">NUK</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=Q19" title="海绵宝宝">海绵宝宝</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=E55" title="美德乐">美德乐</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=H35" title="乐儿宝">乐儿宝</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=H56" title="日康">日康</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=K01" title="亲亲我">亲亲我</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=X24" title="安朵">安朵</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=C90" title="伊尔蒂">伊尔蒂</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=S35" title="舒氏">舒氏</a>
+											<a target="_blank" href="" title="迪士尼">迪士尼</a>
+										</p>
+									</li>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=11" title="尿裤">尿裤</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1100" title="新生儿">新生儿</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1101" title="S型号">S型号</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1102" title="M型号">M型号</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1103" title="L型号">L型号</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1104" title="XL型号">XL型号</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1105" title="XXL型号">XXL型号</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1107" title="拉拉裤">拉拉裤</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1109" title="防尿垫巾/尿布">防尿垫巾/尿布</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=U29" title="伊瑞丝">伊瑞丝</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=X40" title="凯瑞丝">凯瑞丝</a>
+											<a class="red" target="_blank" href="" title="班博">班博</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=473" title="好奇">好奇</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=H65" title="安儿乐">安儿乐</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=552" title="妈咪宝贝">妈咪宝贝</a>
+											<a target="_blank" href="#" title="奇莫">奇莫</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=S46" title="好奇铂金装">好奇铂金装</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=609" title="花王">花王</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=H82" title="GOO.N大王">GOO.N大王</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=632" title="帮宝适">帮宝适</a>
+										</p>
+									</li>
+								</ul>
+								<ul>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=12" title="洗浴护理">洗浴护理</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1200" title="湿巾/纸巾">湿巾/纸巾</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1201" title="婴儿护肤">婴儿护肤</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1202" title="防晒防冻">防晒防冻</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1203" title="护臀爽身">护臀爽身</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1204" title="身体清洁">身体清洁</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1205" title="洗护礼盒">洗护礼盒</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/clothing_c.php?cc=120404" title="口腔护理">口腔护理</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1300" title="清洁用品">清洁用品</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=U29" title="伊瑞丝">伊瑞丝</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=P81" title="凯瑞丝">凯瑞丝</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=603" title="贝亲">贝亲</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=F12" title="康馨儿">康馨儿</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=623" title="B&B">B&B</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=834" title="菲丽洁">菲丽洁</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=Q67" title="哈罗闪">哈罗闪</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=R36" title="碧呵">碧呵</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=Q66" title="施巴">施巴</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=860" title="十月天使">十月天使</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=261" title="婴之侣">婴之侣</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=W21" title="亲润">亲润</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=J36" title="开丽">开丽</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=G23" title="婴唯爱">婴唯爱</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=G23" title="屁屁乐">屁屁乐</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=E55" title="美德乐">美德乐</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=F18" title="松达">松达</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=N58" title="MAM ">MAM</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=N81" title="安贝儿">安贝儿</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=V49" title="草木良品">草木良品</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=T43" title="加蒂耶">加蒂耶</a>
+											<a target="_blank" href="#" title="美丽健">美丽健</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=F49" title="嗳呵">嗳呵</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=T47" title="法贝儿">法贝儿</a>
+										</p>
+									</li>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=13" title="居家日用">居家日用</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1302" title="洗澡用具">洗澡用具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1304" title="安全防护">安全防护</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=W35" title="净水器">净水器</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1305" title="降温用品">降温用品</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1308" title="家庭药箱">家庭药箱</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1310" title="如厕用品">如厕用品</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1303" title="居室消毒/净化">居室消毒/净化</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1309" title="棉签/剪刀/梳子/粉扑">棉签/剪刀/梳子/粉扑</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1311" title="计量器具">计量器具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1312" title="家用小电器">家用小电器</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1313" title="家居杂品">家居杂品</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=130303" title="驱蚊用品">驱蚊用品</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1315" title="毛巾浴巾">毛巾浴巾</a>
+											<a target="_blank" href="#" title="粉扑/盒">粉扑/盒</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=R69" title="U-za">U-za</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=K89" title="得琪">得琪</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=D91" title="小白熊">小白熊</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=R11" title="幼蓓">幼蓓</a>
+											<a target="_blank" href="" title="安贝儿">安贝儿</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=W35" title="3M">3M</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=H95" title="Coolbaby">Coolbaby</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=G39" title="茶花">茶花</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=D96" title="马博士">马博士</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=897" title="易简">易简</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=261" title="3M口罩">3M口罩</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=H56" title="婴之侣">婴之侣</a>
+											<a target="_blank" href="#" title="日康">日康</a>
+											<a target="_blank" href="#" title="明高">明高</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=F95" title="津娃">津娃</a>
+											<a target="_blank" href="#" title="欧洁">欧洁</a>
+											<a target="_blank" href="#" title="乐儿宝">乐儿宝</a>
+										</p>
+									</li>
+								</ul>
+								<ul>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=15" title="宝宝车床椅">车床椅</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1500" title="婴幼儿伞推车">婴幼儿伞推车</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1501" title="学步车">学步车</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1503" title="滑板车">滑板车</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1504" title="三轮车">三轮车</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1505" title="电动车">电动车</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1506" title="自行车">自行车</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1510" title="汽车座椅">汽车座椅</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1507" title="婴童床">婴童床</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1508" title="餐椅">餐椅</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1509" title="摇椅">摇椅</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=H60" title="葛莱">葛莱</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn"/product/category?brand=K41"" title="Lulala">Lulala</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=S28" title="Joie Gold Label">Joie Gold Label</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=U88" title="巧儿宜">巧儿宜</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=625" title="宝贝第一">宝贝第一</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=U69" title="爱斯博儿">爱斯博儿</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=S77" title="Recaro">Recaro</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=S79" title="贝贝卡西">贝贝卡西</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=T41" title="优贝">优贝</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=Q80" title="宜柏">宜柏</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=S94" title="POUCH">POUCH</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=T44" title="爱贝丽">爱贝丽</a>
+											<a target="_blank" href="#" title="好孩子">好孩子</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=W84" title="小硕士">小硕士</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=548" title="小天使">小天使</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=U38" title="小泰克">小泰克</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=P84" title="宝得适">宝得适</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=U64" title="第一站">第一站</a>
+										</p>
+									</li>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=16" title="宝宝寝居用品">寝居用品</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1600" title="睡枕">睡枕</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1601" title="睡/抱袋">睡/抱袋</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1602" title="被褥">被褥</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1603" title="床围/饰品">床围/饰品</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1604" title="套装/礼盒">套装/礼盒</a>
+											<a target="_blank" href="#" title="学坐枕">学坐枕</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=1608" title="浴巾/擦"> 浴巾/擦</a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=V74" title="Candide">Candide</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=C99" title="费雪">费雪</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=P05" title="歌瑞贝儿">歌瑞贝儿</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/product/category?brand=R38" title="宜柏">宜柏</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?brand=R22" title="惟爱贝">惟爱贝</a>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<!--5宝宝学与玩-->
+							<div class="padd_content nav_subcat_4 clearfix" style="display: none; width: 481px;">
+								<ul>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=22" title="玩具">玩具</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2200" title="男孩玩具">男孩玩具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2201" title="女孩玩具">女孩玩具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2202" title="牙胶摇铃">牙胶摇铃</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2203" title="毛绒玩具">毛绒玩具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2204" title="布艺玩具">布艺玩具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2205" title="游戏垫">游戏垫</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2206" title="DIY创意">DIY创意</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2207" title="拼插玩具">拼插玩具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2208" title="肢体协调">肢体协调</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2209" title="乐音玩具">乐音玩具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2210" title="智力开发">智力开发</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2211" title="电子玩教具">电子玩教具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2212" title="沙滩玩具">沙滩玩具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2213" title="戏水玩具">戏水玩具</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2205" title="爬行地垫 ">爬行地垫 </a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2218" title="球类 ">球类 </a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=T54" title="玛力">玛力</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=T51" title="小熊尼奥">小熊尼奥</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=S02" title="字母">字母</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=V89" title="EWAN甜梦绵羊">EWAN甜梦绵羊</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=U38" title="小泰克">小泰克</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=385" title="星月">星月</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=E69" title="澳贝">澳贝</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=866" title="费雪">费雪</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=U82" title="托马斯">托马斯</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=D36" title="培培乐">培培乐</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=R52" title="吉龙">吉龙</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=K56" title="Aojie">Aojie</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=K21" title="启航">启航</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=K75" title="南国婴宝">南国婴宝</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=S21" title="火火兔">火火兔</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=P55" title="五星">五星</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=S83" title="优彼">优彼</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=R16" title="贝乐康">贝乐康</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=U55" title="纽曼天线宝宝">纽曼天线宝宝</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=U66" title="海宝宝">海宝宝</a>
+											<a class="red" target="_blank" href="http://s.leyou.com.cn/search?key=U91" title="龙昌">龙昌</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=J98" title="环奇">环奇</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=F31" title="贝乐星">贝乐星</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=K01" title="亲亲我">亲亲我</a>
+										</p>
+									</li>
+								</ul>
+								<ul>
+									<li class="subItem">
+										<h3 class="subItem-hd">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=21" title="图书音像文具">图书音像文具</a>
+										</h3>
+										<p class="subItem-cat">
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2111" title="画笔">画笔</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2112" title="写字板 ">写字板 </a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2100" title="挂图认知卡片">挂图认知卡片</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2101" title="立体触摸书">立体触摸书</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2102" title="儿歌童谣故事">儿歌童谣故事</a>
+											<a target="_blank" href="http://s.leyou.com.cn/product/category?cid=2103" title="拼图 ">拼图 </a>
+										</p>
+										<h4 class="subItem-title brandTitle">热卖品牌：</h4>
+										<p class="subItem-brand">
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=261" title="婴之侣">婴之侣</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=J75" title="蓝鹰">蓝鹰</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=U73" title="迪迪龙">迪迪龙</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=545" title="伊诺特">伊诺特</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=020" title="北方妇女儿童出版社">北方妇女儿童出版社</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=S63" title="安少授权">安少授权</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=B75" title="中国人口出版社">中国人口出版社</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=S64" title="安少普通">安少普通</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=V76" title="青岛出版社">青岛出版社</a>
+											<a target="_blank" href="http://s.leyou.com.cn/search?key=U96" title="黑龙江美术出版社">黑龙江美术出版社</a>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="nav_hbg"><i></i></div>
+					<div class="nav_lbg"><i></i></div>
+					<div class="nav_rbg"><i></i></div>
+				</div>
+			</div>
+			<div class="nav_ul">
+				<ul class="clearfix">
+					<li class="current"><a href="http://www.leyou.com.cn/">首页</a></li>
+					<li><a href="http://www.leyou.com.cn/product/promotion_2012.php?special_id=598" target="_blank" class="">新品</a></li>
+				   <!-- <li><a href="http://www.leyou.com.cn/product/clothing.php" target="_blank" class="">童装</a></li> -->
+				   <!-- <li><a href="http://www.leyou.com.cn/product/momzone.php" target="_blank" class="">妈妈用品</a></li> -->
+				   <li><a href="http://www.leyou.com.cn/product/clearance/clearancezone" target="_blank" class="">优惠专区</a></li>
+				   <li><a href="http://www.leyou.com.cn/product/promotion_2012.php?special_id=627" target="_blank" class="">礼品专区</a></li>
+				</ul>
+			</div>
+			<div class="nav_right user_cart" id="global_user_cart">
+				<a href="http://www.leyou.com.cn/wish_list/index">乐愿单</a>
+				<a href="http://www.leyou.com.cn/user/Directory.php">索取目录</a>
+				<a href="http://bbs.leyou.com.cn/bbs/forum.php">亲子论坛</a>
+				<a href="http://www.leyou.com.cn/special/mall/Stores_index.php">乐友连锁店</a>
+			</div>
+		</div>
+	</div>
+
+	</body>
+</html><script language="JavaScript"> 
+<!--
+var bResubmit=false;
+//Prevent the user from submitting the form after the first submission
+function checkResubmit(frm)
+{
+	if (bResubmit) {
+	   return false;
+	} else {
+	   bResubmit=validateForm(frm);
+	   return bResubmit;
+	}
+}
+ 
+function trim(str)
+{
+	var ret = "";
+	for (var i=0; i<str.length; i++) {
+		if (str.charAt(i)!=" " && str.charAt(i)!="\t" && str.charAt(i)!="\f" && str.charAt(i)!="\v" && str.charAt(i)!="\n" && str.charAt(i)!="\r")
+			break;
+	}
+	for (var j=str.length; j>0; j--) {
+		if (str.charAt(j-1)!=" " && str.charAt(j-1)!="\t" && str.charAt(j-1)!="\f" && str.charAt(j-1)!="\v" && str.charAt(j-1)!="\n" && str.charAt(j-1)!="\r")
+			break;
+	}
+	if (j>i) ret = str.substring(i, j);
+	return ret;
+}
+ 
+// this function is compatible with both IE and Netscape
+// sel.value is only compatible with IE
+function getSelectBoxValue(sel)
+{
+	return sel.options[sel.selectedIndex].value;
+}
+ 
+function openWindow(url,name,w,h,style)
+{
+	var win=open(url,name,"width="+w+","+"height="+h+","+style);
+	if (win.focus) win.focus();
+}
+ 
+//-->
+</script><script language="JavaScript"> 
+<!--
+ 
+function gotoBrand(frm) {		//按品牌查询的url定向
+	if (frm.LY_Brand.selectedIndex==0) {
+		alert('请先选择品牌');
+		frm.LY_Brand.focus();
+		return false;
+	} else {
+		strNewUrl = "/product/brand_i/" +  getSelectBoxValue(frm.LY_Brand) + "?LY_Category=1D";
+	}
+	frm.action = strNewUrl;
+	return true;
+}
+ 
+function gotoPrice(frm) {		//按价格查询的url定向
+	if (frm.LY_PriceID.selectedIndex==0) {
+		alert('请先选择价位');
+		frm.LY_PriceID.focus();
+		return false;
+	} else {
+		strNewUrl = "/product/price_i/" +  getSelectBoxValue(frm.LY_PriceID) + "?LY_Category=1D";
+	}
+	frm.action = strNewUrl;
+	return true;
+}
+ 
+//-->
+</script>
+
+<link rel="stylesheet" type="text/css" href="/css/search/layout_list.css" /> 
+<!-- <link rel="stylesheet" type="text/css" href="http://leyouimage.leyou.com.cn/newweb/css/base.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="http://leyouimage.leyou.com.cn/newweb/css/index1.css" /> -->
+<link rel="stylesheet" type="text/css" href="/css/search/master.css"/>
+<link rel="stylesheet" type="text/css" href="/css/search/products66.css"/>
+
+<script src="/js/controllers/product/ly_shopping_index_v1.js"></script>
+<script src="/js/controllers/product/jquery.simplemodal.js"></script>
+<script type="text/javascript" src="/js/controllers/product/common_v1.js"></script>
+<script type="text/javascript" src="/js/controllers/product/home.js"></script>
+<script src="/js/controllers/product/head.js"></script>
+<script type="text/javascript" src="/js/controllers/search/leyouKeyfilter.js"></script>
+<script type="text/javascript" src="/js/controllers/search/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="/js/controllers/search/suggest.js"></script>
+<script type="text/javascript" src="/js/common/Util.js"></script>
+<script type="text/javascript" src="/js/common/Request.js"></script>
+ <script src='/js/controllers/search/page3Action.js'></script>
+
+
+	<div id="breadcrumb" name="__breadcrumb">
+		您所在的位置：搜索 ><a href="#">进口奶粉</a>
+	</div>
+	<div id="productwarp">
+			<div id="productleftwarp">
+		    <!--按商品分类查找-->
+			    <div class="prolftbox">
+			       <h2 title="品类分类">按品类分类</h2> 
+			       			       <p class="seapadd all_img"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('0'))">全部</a>(13) </p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('17'))">童装</a></p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('18'))">妈妈用品</a></p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('14'))">喂养</a></p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('12'))">洗护</a></p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('19'))">食品</a></p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('22'))">玩具</a></p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('13'))">居家日用</a></p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('20'))">奶粉</a></p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('15'))">车床椅</a></p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('11'))">尿裤</a></p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('24'))">营养</a></p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('16'))">寝具</a></p> 
+				       				       		<p class="seapadd gj_img1"> <a href="javascript:pageAction.redirect('ctgy_code_all',encodeURIComponent('21'))">图书音像纪念品 </a></p> 
+				       			       			       <p class="clear"></p> 
+			    </div>
+		 	</div>
+	    <!--右边商品列表-->
+		  	<div class="seats">
+		  		<h3 class="seats_h3"> </h3><span class="seats_span">以下是所有搜索结果，搜索到<strong class="red12">29</strong>件商品</span>
+		  	</div>
+		    <div id="mainList" style="margin:5px 0 12px 0;"> 
+				<div id="display">
+					<ul class="display-settings top">
+						<li class="display-mode-v2">
+							<span>排序方式：</span>
+							 <a href="javascript:pageAction.redirect('sort','addtime:false')" title="最新上架" class="s4-up" id="sale_date_sort">按时间排序</a>
+							 <a title="按价格排序" href="javascript:pageAction.redirect('sort','price:true')" class="s3-up" id="sale_price_sort">按价格排序</a>
+							 <a href="javascript:pageAction.redirect('sort','prodcutsellamount:false')" title="最新热销" class="s5-selected" id="sale_quantity_sort">最新热销</a>
+							<div class="sort-mode-content" style="margin-top:2px;">
+								<select name="viewType" onchange="pageAction.redirect('sort',this.value)" id="sortSelect">
+								<option value="addtime:false">最新上架</option>
+								<option value="prodcutsellamount:false">最新热销</option>
+								<option value="price:true" >价格：由低到高</option>
+								<option value="price:false">价格：由高到低</option>
+								<option value="discount:true">折扣</option>
+								</select>
+							</div>
+
+							<script>
+								pageAction.selectOption('sortSelect','');
+							</script>
+						</li>
+						<li class="quick-page-changer" style="width:210px; margin-top:6px;">
+						  	<span style="line-height:16px; display:block;">翻页</span>
+						  	
+									 	 					 <a href="javascript:pageAction.redirect('page' ,2);" class="next-page"><span style="width:40px; padding-left:0; margin-left:4px; line-height:18px; display:block;">下一页</span></a>		
+		 	 										</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<div class="propicList">
+					<div class="propicList">
+						<div class="wrapperList">
+							<!-- Begin 商品展示 -->
+																							<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/8998821101">
+												<img src="http://leyouimage.leyou.com.cn/images_db/72/67/7267462d449692f18a4147c2e9b90d52.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥185.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/8998821101" title="雀巢（Nestle）早启能恩早产/低出生体重婴儿配方奶粉400g/罐装（德国进口）">
+																							雀巢（Nestle）早启能恩早产/低出生体重婴儿配方奶粉400g/罐装（德国进口）
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_8998821101_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=8998821101" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/4310003600">
+												<img src="http://leyouimage.leyou.com.cn/images_db/28/56/2856a992d8e666705e964beed989c6fd.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥286.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/4310003600" title="合生元金装妈妈配方奶粉900g欧洲原装进口">
+																							合生元金装妈妈配方奶粉900g欧洲原装进口
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_4310003600_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=4310003600" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6450005200">
+												<img src="http://leyouimage.leyou.com.cn/images_db/36/60/36603b33ba3319ae537f6ece079bfcbf.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥175.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6450005200" title="Abbott雅培金装智护妈妈喜康素孕产妇营养配方奶粉800g新加坡进口">
+																							Abbott雅培金装智护妈妈喜康素孕产妇营养配方奶粉800g新加坡进口
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_6450005200_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=6450005200" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6450005300">
+												<img src="http://leyouimage.leyou.com.cn/images_db/25/11/2511cfced5eaa35606fcc0e18e899e8e.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥368.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6450005300" title="雅培（Abbott）金装亲护婴儿配方奶粉1段（0-12个月）820g/罐装（西班牙进口）">
+																							雅培（Abbott）金装亲护婴儿配方奶粉1段（0-12个月）820g/罐装（西班牙进口）
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_6450005300_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=6450005300" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6459158801">
+												<img src="http://leyouimage.leyou.com.cn/images_db/ee/fc/eefc045ba46d1e70573d6daf2613789d.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥153.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6459158801" title="Abbott雅培金装亲护1段乳蛋白部分水解婴儿配方奶粉360g西班牙进口">
+																							Abbott雅培金装亲护1段乳蛋白部分水解婴儿配方奶粉360g西班牙进口
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_6459158801_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=6459158801" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/4310003100">
+												<img src="http://leyouimage.leyou.com.cn/images_db/23/36/23366c3548df1f5b5a25ed38831d40bb.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥298.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/4310003100" title="合生元贝塔星婴儿配方奶粉0至6个月900g欧洲原装进口">
+																							合生元贝塔星婴儿配方奶粉0至6个月900g欧洲原装进口
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_4310003100_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=4310003100" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/8996627501">
+												<img src="http://leyouimage.leyou.com.cn/images_db/04/8f/048f93afda6792c66b4bf4f8213b667f.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥128.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/8996627501" title="雀巢（Nestle）能恩AL110无乳糖配方奶粉（0-12个月）400g/罐装（荷兰进口）">
+																							雀巢（Nestle）能恩AL110无乳糖配方奶粉（0-12个月）400g/罐装（荷兰进口）
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_8996627501_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=8996627501" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6459160201">
+												<img src="http://leyouimage.leyou.com.cn/images_db/bc/76/bc762a8a196609d1c5860f0c654d2ebb.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥263.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6459160201" title="雅培亲体Similac进口奶源经典恩美力900g灌装1段">
+																							雅培亲体Similac进口奶源经典恩美力900g灌装1段
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_6459160201_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=6459160201" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6459159801">
+												<img src="http://leyouimage.leyou.com.cn/images_db/b3/69/b369a8f5c41310dd0029d8243db51457.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥222.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6459159801" title="雅培亲体Similac进口奶源经典恩美力2段900g智锁罐">
+																							雅培亲体Similac进口奶源经典恩美力2段900g智锁罐
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_6459159801_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=6459159801" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6459159901">
+												<img src="http://leyouimage.leyou.com.cn/images_db/1e/e4/1ee4cf3e5b7dde0bbb39850ec121af37.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥196.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6459159901" title="雅培亲体Similac进口奶源经典恩美力3段900g智锁罐">
+																							雅培亲体Similac进口奶源经典恩美力3段900g智锁罐
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_6459159901_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=6459159901" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/8998821701">
+												<img src="http://leyouimage.leyou.com.cn/images_db/c0/a1/c0a18f4a5f3cb02800bd8a9e8834c240.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥325.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/8998821701" title="雀巢（Nestle）NAN超启能恩乳蛋白部分水解HA婴儿配方奶粉1段（0-12个月）800g/罐装（德国原装进口）">
+																							雀巢（Nestle）NAN超启能恩乳蛋白部分水解HA婴儿配方奶粉1段（0-12个月）800g/罐装（
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_8998821701_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=8998821701" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6380009700">
+												<img src="http://leyouimage.leyou.com.cn/images_db/1f/ff/1fffcde78e82dda65b03cdf0722f7660.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥136.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6380009700" title="惠氏（Wyeth）S26金装爱儿复无乳糖配方奶粉（0-12个月）400g/罐装（爱尔兰原装进口）">
+																							惠氏（Wyeth）S26金装爱儿复无乳糖配方奶粉（0-12个月）400g/罐装（爱尔兰原装进口）
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_6380009700_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=6380009700" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6455817300">
+												<img src="http://leyouimage.leyou.com.cn/images_db/a8/15/a815f71ad31be37dff335115ef322a30.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥178.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/6455817300" title="雅培 （Abbott）金装喜康宝智护100 早产儿配方奶粉（0-12个月）370g/罐装（西班牙原装进口）">
+																							雅培 （Abbott）金装喜康宝智护100 早产儿配方奶粉（0-12个月）370g/罐装（西班牙原装
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_6455817300_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=6455817300" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/8990352301">
+												<img src="http://leyouimage.leyou.com.cn/images_db/79/36/7936015e781a00775f31c2f09942717f.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥178.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/8990352301" title="雀巢（Nestle）NAN超启能恩乳蛋白部分水解HA婴儿配方奶粉1段（0-12个月）380g/罐装（德国原装进口）">
+																							雀巢（Nestle）NAN超启能恩乳蛋白部分水解HA婴儿配方奶粉1段（0-12个月）380g/罐装（
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_8990352301_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=8990352301" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/S300000901">
+												<img src="http://leyouimage.leyou.com.cn/images_db/9f/8c/9f8cb9edadc9a4e0ede4eb6dd6f5a097.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥180.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/S300000901" title="雅培爱尔兰原装进口欧盟纯净奶源菁挚奶粉1段0-6个月400g">
+																							雅培爱尔兰原装进口欧盟纯净奶源菁挚奶粉1段0-6个月400g
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_S300000901_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=S300000901" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/4310003500">
+												<img src="http://leyouimage.leyou.com.cn/images_db/fb/ae/fbae5d1909074cd16592293ed3a1b954.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥378.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/4310003500" title="合生元（BIOSTIME）派星较大婴儿配方奶粉2段（6-12个月）900g/罐装（欧洲原装进口）">
+																							合生元（BIOSTIME）派星较大婴儿配方奶粉2段（6-12个月）900g/罐装（欧洲原装进口）
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_4310003500_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=4310003500" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/S300000501">
+												<img src="http://leyouimage.leyou.com.cn/images_db/a1/17/a11751ebb2fe8e2963e0c3bc4cd09442.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥388.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/S300000501" title="雅培（Abbott）菁挚Eleva纯净婴儿配方奶粉1段（0-6个月）900g/罐装（爱尔兰原装进口）">
+																							雅培（Abbott）菁挚Eleva纯净婴儿配方奶粉1段（0-6个月）900g/罐装（爱尔兰原装进口）
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_S300000501_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=S300000501" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/J008521201">
+												<img src="http://leyouimage.leyou.com.cn/images_db/df/a1/dfa1b5aaac4ef1f2863e413ebad439fb.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥285.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/J008521201" title="惠氏启赋（Wyeth illuma）学龄前儿童配方奶粉4段（3-7岁）900g/罐装（爱尔兰原装进口）">
+																							惠氏启赋（Wyeth illuma）学龄前儿童配方奶粉4段（3-7岁）900g/罐装（爱尔兰原装进口
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_J008521201_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=J008521201" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/S300000601">
+												<img src="http://leyouimage.leyou.com.cn/images_db/70/fc/70fcfe149f94a39903874002edc76b9e.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥388.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/S300000601" title="雅培 （Abbott）菁挚Eleva纯净较大婴儿配方奶粉2段 （6-12个月） 900g/罐装（爱尔兰原装进口）">
+																							雅培 （Abbott）菁挚Eleva纯净较大婴儿配方奶粉2段 （6-12个月） 900g/罐装（爱尔
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_S300000601_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=S300000601" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																<div class="products">
+																				<span class="pic">
+											
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/4310003300">
+												<img src="http://leyouimage.leyou.com.cn/images_db/e8/c0/e8c03e2aad5249ff494817870359c4dc.JPG" width="250" height="250" border=0>
+
+											</a>
+
+										</span>
+										<div>
+											<span style="position:relative; top:3px;"></span>
+										</div> 
+										<span class="disPrice">￥298.00</span> 
+																				<span class="intro">
+											<a target="_blank" href="http://item.leyou.com.cn/product/single/4310003300" title="合生元（BIOSTIME）贝塔星幼儿配方奶粉3段（12-36个月）900g/罐装（欧洲原装进口）">
+																							合生元（BIOSTIME）贝塔星幼儿配方奶粉3段（12-36个月）900g/罐装（欧洲原装进口）
+																						</a>
+										</span>
+										<!-- <span class="adBuy">
+											<a onclick='addCart(this.id)' id='addcard_4310003300_0' href="javascript:void(0)">放入购物车</a>
+										</span> -->
+										<!-- <span class="adFav"><a href="/purchase/bookmark?LY_addbkmrkprodid=167577">收藏</a> -->
+										<!-- <span class="adFav"><a href="javascript:void(0)">收藏</a>
+										</span> -->
+										<div class="clear">
+											
+										</div>
+										<span class="intro ss-btn" style="margin-top:8px;">
+											<!-- <a href="javascript:void(0);" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+											<!-- <a href="/wish_list/my_lyd?add_sku=4310003300" target="_blank">
+												<img src="/image/search/addlydimg001.gif" />
+											</a> -->
+										</span>
+									<p class="rank"></p>
+									
+								</div>
+																												
+							<div class="clear"></div>        
+							<div class="clear"></div>
+						</div>
+						<div class="pagination">
+						   <!-- 显示分页 -->
+							<ul>
+				 					<!-- <li class="currentpage">1</li> -->
+				 									 					<li class='disablepage'>上一页</li>
+				 									 					<!-- 具体页号开始 -->
+				 									 										 							<li class="currentpage">1</li>
+				 										 									 										 							<li><a  href="javascript:pageAction.redirect('page' ,2);">2</a></li>
+				 										 									   					<!-- 具体页号结束 -->
+				   					<!-- 上一页 -->
+				   									 	 				<li><a  href="javascript:pageAction.redirect('page' ,2);">下一页</a></li>
+				 	 								 	 				<!-- 一共多少页数据 -->
+				 	 				<li><a  href="javascript:pageAction.redirect('page' ,2);">第2页</a></li> 
+				 				</ul>        
+						</div>
+						<div class="clear"></div>
+						<div>
+							<!-- 获取相关短语提示 -->
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+    <div class="secseach">
+	<!--<form method="get" action="" id="SecondSearchForm">   -->
+		<input name="secondKeyWord" id="secondKeyWord" type="text" class="topinput" size="45" value="" style="height:24px;"/>
+	    <label>&nbsp;&nbsp;<a href="#" style="position:relative;" onclick="secondSearchSubmit()"><img width=111; height=24; src="/image/search/look_at_the_results.png" style="*margin-top:-11px;" /></a>&nbsp;<span style=" width:200px; position:relative; top:-7px;">
+       <!--  <input type="checkbox" name="expert" id="expert" /> 
+	      在结果中查询--></span> 
+      </label>
+   <!-- </form>  --> 
+  	</div>
+	<!--页脚部分-->
+<!-- 公共底部 -->
+<div style='margin-top: 470px;'>
+	<!-- <link href="/css/common/reset.css" rel="stylesheet" type="text/css"> -->
+		<link href="/css/common/footer.css" rel="stylesheet" type="text/css">   <!--footer-->
+
+        <!--footer-->
+		<div class="footer clearfix">
+			<div class="footer_top clearfix">
+				<div class="footer_topl">
+					<div class="footer_phone"><span></span>400-666-9888</div>
+					<p class="p_time">客服电话 免长途费 周一至周日 9:00-18:00</p>
+					<dl class="dl_two_code">
+						<dt><img src="/image/common/foot/code.png" alt="" /></dt>
+						<dd>
+							<p><a href="http://www.leyou.com.cn/app/download/lyappdownload.php?os=android">安卓版下载</a></p>
+							<p class="ihoneimg"><a href="http://www.leyou.com.cn/app/download/lyappdownload.php?os=ios">苹果版下载</a></p>
+						</dd>
+					</dl>
+				</div>
+				<div class="footer_topr">
+					<dl>
+						<dt>关于乐友</dt>
+						<dd>
+							<a href="http://www.leyou.com.cn/help/page_help_about">关于我们</a>
+							<a href="http://www.leyou.com.cn/help/help_yjjy">联系我们</a>
+							<a href="http://www.leyou.com.cn/help/ggfw">广告服务</a>
+							<a href="http://www.leyou.com.cn/help/hr">乐友招聘</a>
+							<a href="http://www.leyou.com.cn/special/promotion/2011/07/zhaozu">乐友开店</a>
+							<a href="http://www.leyou.com.cn/special/league/index.php">乐友加盟</a>
+							<a href="http://www.leyou.com.cn/help/hzsh">友情链接</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>消费者保障</dt>
+						<dd>
+							<a href="http://www.leyou.com.cn/help/help_gwbz">购物保障</a>
+							<a href="http://www.leyou.com.cn/help/help_main">购物安全</a>
+							<a href="http://www.leyou.com.cn/help/help_quality">如何退换货</a>
+							<a href="http://www.leyou.com.cn/help/fapiaozhidu">发票制度</a>
+							<a href="http://www.leyou.com.cn/help/help_quality">售后服务</a>
+							<a href="http://www.leyou.com.cn/help/help_faq">常见问题解答</a>
+							<a href=""></a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>购物指南</dt>
+						<dd>
+							<a href="http://www.leyou.com.cn/help/help_order">购物演示</a>
+							<a href="http://www.leyou.com.cn/help/help_cxzp">如何参加促销</a>
+							<a href="http://www.leyou.com.cn/order/queryorder">订单查询</a>
+							<a href="http://www.leyou.com.cn/help/xiugaidingdan">修改订单</a>
+							<a href="http://www.leyou.com.cn/help/help_spqs">商品签收</a>
+							<a href="">使用15元会员券</a>
+							<a href="http://www.leyou.com.cn/help/Privacy-Services">隐私权与服务</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>支付配送</dt>
+						<dd>
+							<a href="http://www.leyou.com.cn/help/help_chargemethod?qqdrsign=05a71#online_zf">网上支付</a>
+							<a href="http://www.leyou.com.cn/help/help_chargemethod?qqdrsign=05a71#card_zf">礼金卡支付</a>
+							<a href="http://www.leyou.com.cn/help/help_chargemethod">货到付款</a>
+							<a href="http://www.leyou.com.cn/help/help_chargemethod#postal_zf">邮政汇款</a>
+							<a href="http://www.leyou.com.cn/help/help_chargemethod#blank_zf">银行汇款</a>
+							<a href="http://www.leyou.com.cn/help/help_shipmethod">配送时效</a>
+							<a href="http://www.leyou.com.cn/help/help_shipmethod">运费标准</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>特色服务</dt>
+						<dd>
+							<a href="http://www.leyou.com.cn/help/help_policy">会员专享</a>
+							<a href="">会员等级</a>
+							<a href="http://www.leyou.com.cn/help/help_prs">会员积分</a>
+							<a href="http://www.leyou.com.cn/help/help_Disclaimer">免责条款</a>
+							<a href="http://www.leyou.com.cn/help/help_yhj">优惠券使用</a>
+							<a href="http://www.leyou.com.cn/product/promotion_2012.php?special_id=627">购买礼金卡</a>
+							<a href=""></a>
+						</dd>
+					</dl>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="baozang"><img src="/image/common/foot/baozang.gif"/></div>
+			<div class="footer_con">
+				<div class="footer_conbox clearfix" style="padding:0 0 0 172px">
+					<dl>
+						<dt><img src="/image/common/foot/315new.GIF" alt="" /></dt>
+						<dd>
+							<p>网上交易</p>
+							<p>保障中心</p>
+						</dd>
+					</dl>
+										<dl>
+						<dt><img src="/image/common/foot/icp.jpg" alt="" /></dt>
+						<dd>
+							<p>沪ICP备</p>
+							<p>15052447号-2</p>
+						</dd>
+					</dl>
+										<dl style="width: 200px;">
+						<dt><img src="/image/common/foot/shiping_xk.jpg" alt="" /></dt>
+						<dd>
+							<p>食品经营许可证</p>
+							<p>JY13101150171467</p>
+						</dd>
+					</dl>
+
+					<dl style="width: 200px;">
+						<dt><img width="40" src="http://image.leyou.com.cn/home/images/yingye_zhizhaon.jpg" alt="" /></dt>
+						<dd>
+							<p>营业执照</p>
+							<p>41000000201611150273</p>
+						</dd>
+					</dl>
+									</div>
+			</div>
+			<div class="footer_bottom">
+				<p>地址：北京市朝阳区八里庄西里100号住邦2000商务中心1号楼西区4层 订购热线：400-666-9888 E-mail：leyou_service@leyou.com</p>
+				<p>上海婴启电子商务有限公司 版权所有 Copyright©1999-2017 leyou.com.cn All Rights Reserved</p>
+			</div>
+			<div class="moveTo"  id="movetop"><img src="/image/common/foot/top.gif" alt="" /></div>
+		</div>
+
+		<script>
+ 						_ozuid="0";
+		</script>
+		<script src='http://www.leyou.com.cn/special/o_code/o_code.js'></script>
+		<!-- <script src='/js/common/o_code.js'></script> -->
+				<style>
+    /*客服*/
+    .customer{
+        position: fixed;
+        right: 12px;
+        bottom: 120px;
+        width: 40px;
+        z-index: 9999;
+    }
+    .customer a{
+        display: block;
+    }
+</style>
+
+<!--<div class="customer" onclick="openInPageChat()"><a href="javascript:viod(0)"><img src="http://leyouimage.leyou.com.cn/mleyou/mall/images/mcall.png"/></a></div>-->
+<script language="javascript" type="text/javascript">
+    NTKF_PARAM = {
+        siteid:"kf_9021",		            //企业ID，为固定值，必填
+        settingid:"kf_9021_1501812664464",	//接待组ID，为固定值，必填
+        uid:"",		                //用户ID，未登录可以为空，但不能给null，uid赋予的值显示到小能客户端上
+        uname:"",		    //用户名，未登录可以为空，但不能给null，uname赋予的值显示到小能客户端上
+        isvip:"0",                          //是否为vip用户，0代表非会员，1代表会员，取值显示到小能客户端上
+        userlevel:"1",		                //网站自定义会员级别，0-N，可根据选择判断，取值显示到小能客户端上
+    }
+    console.log(NTKF_PARAM);
+</script>
+<script type="text/javascript" src="https://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9021" charset="utf-8"></script>
+
+
+;
+
+	
+</div>
+	
+ <!--弹出层start--> 
+	<div id="tocart-content" class="J_dialog"> 
+	   <div style="width:446px;" class="J_dialog_content"> 
+	    <div class="J_dialog_hd"> 
+	     <h6 class="J_dialog_title" id="damon_title">加入购物车成功</h6> 
+	     <a class="J_dialog_close simplemodal-close" href="javascript:void(0);">关闭</a> 
+	    </div> 
+	    <div class="J_dialog_bd"> 
+	     <div class="msg-m msg-ok-m" id="promptInfo"> 
+	      <div style="display:block;background:url(/image/product/loading.gif) center center no-repeat;">
+	       &nbsp;
+	      </div> 
+	     </div> 
+	     <div class="line-s" id="byShoppingCartWrapper" style="display:none;"> 
+	      <p class="ml5 mt10 mb10">也许你会喜欢</p> 
+	      <ul class="cl list-m-n4" id="byShoppingCartItems"> 
+	      </ul> 
+	     </div> 
+	    </div> 
+	    <div class="J_dialog_ft"></div>
+	   </div> 
+	   <div class="J_dialog_shadow"></div> 
+	</div> 
+	<div id="togz-content" class="J_dialog"> 
+		<div style="width:446px;" class="J_dialog_content"> 
+			<div class="J_dialog_hd"> 
+			 <h6 class="J_dialog_title" id="damonbook_title">加入关注中...</h6> 
+			 <a class="J_dialog_close simplemodal-close" href="javascript:void(0);">关闭</a> 
+			</div> 
+			<div class="J_dialog_bd"> 
+			 <div class="msg-m msg-ok-m" id="damonpromptInfo"> 
+			  <div style="display:block;background:url(/image/product/loading.gif) center center no-repeat;">
+			   &nbsp;
+			  </div> 
+			 </div> 
+			</div> 
+			<div class="J_dialog_ft"></div>
+		</div> 
+		<div class="J_dialog_shadow"></div> 
+	</div> 
+	<div id="tolyd-content" class="J_dialog"> 
+		<div style="width:446px;" class="J_dialog_content"> 
+			<div class="J_dialog_hd"> 
+			 <h6 class="J_dialog_title" id="lyd_title">加入乐愿单中...</h6> 
+			 <a class="J_dialog_close simplemodal-close" href="javascript:void(0);">关闭</a> 
+			</div> 
+			<div class="J_dialog_bd"> 
+			 <div class="msg-m msg-ok-m" id="lydpromptInfo"> 
+			  <div style="display:block;background:url(/image/product/loading.gif) center center no-repeat;">
+			   &nbsp;
+			  </div> 
+			 </div> 
+			</div> 
+			<div class="J_dialog_ft"></div>
+		</div> 
+		<div class="J_dialog_shadow"></div> 
+	</div> 
+<!--弹出层end--> 
+<input type="hidden" id="userid" value="13431624"/>
+<!--部署会员ID开始 -->
+<script type="text/javascript">
+	var _ozuid = document.getElementById("userid").value;//请技术配合为参数赋值
+</script>
+<!--部署会员ID结束 -->
+<!--<script src="http://ads.marketone.com.cn/pix?p=6"></script>-->
+<script language="JavaScript" src="/js/common/o_code.js"></script>
+<!--<script src="http://ads.marketone.com.cn/pix?p=6"></script>-->
+<script type="text/javascript"><!--
+	//var GLOBAL_FULL_ATTR = "attr1,attr2,attr3,attr4,attr5,attr6";
+	var GLOBAL_FULL_ATTR ="";	//排序下拉框
+    var sortSelect=document.getElementById('sortSelect');
+    var sortValue="";
+  
+    for(var i=0;i<sortSelect.options.length;i++)
+    {
+			if(sortSelect.options[i].value==sortValue)
+			{
+				sortSelect.options[i].selected='selected';
+				break;
+			}
+    }
+    //排序图标
+    var sale_price_dom=document.getElementById("sale_price_sort");
+    var sale_quantity_dom=document.getElementById("sale_quantity_sort");
+    var sale_date_dom=document.getElementById("sale_date_sort");
+    switch(sortValue)
+    {
+    case "sale_price;desc":
+        {
+        	sale_price_dom.className="s3-down-selected";
+        	sale_price_dom.href="javascript:pageAction.redirect('sort','sale_price;asc')";
+        	//alert(sale_price_dom.href);
+        	sale_quantity_dom.className="s4-up";
+        	sale_date_dom.className="s5";
+        };
+        break;
+    case "sale_price;asc":
+        {
+            sale_price_dom.className="s3-up-selected";
+            sale_price_dom.href="javascript:pageAction.redirect('sort','sale_price;desc')";
+            sale_quantity_dom.className="s4-up";
+            sale_date_dom.className="s5";
+            };
+        break;
+    case "sale_quantity;desc":
+        {
+            sale_price_dom.className="s3-up";
+            sale_quantity_dom.className="s4-up-selected";
+            sale_date_dom.className="s5";
+            };
+        break;
+    case "sale_date;desc":
+        {
+            sale_price_dom.className="s3-up";
+            sale_quantity_dom.className="s4-up";
+            sale_date_dom.className="s5-selected";
+            };
+        break;
+    }
+</script>
+<!-- <script type="text/javascript" src="js/Util.js"></script>
+<script type="text/javascript" src="js/Request.js"></script>
+<script type="text/javascript" src="js/page3Action.js"></script> -->

@@ -1,0 +1,4 @@
+# 更新频率   1表示只爬取一页
+UPDATE_RATE =1
+REDIS_PORT=6379
+REDIS_HOST='127.0.0.1'
